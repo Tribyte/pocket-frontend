@@ -1,0 +1,183 @@
+@import "../../../../../variables.scss";
+
+#campaign-form {
+    //positioning
+    position: fixed;
+    top: 0;
+    left: $sidebar-expanded-width;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //measurements
+    width: 0;
+    overflow-x: hidden;
+    background-color: $sidebar-dark-color;
+    //timing
+    transition: $sidebar-transition;
+
+    &.active {
+        //measurements
+        width: $sidebar-expanded-width - $sidebar-width;
+    }
+
+    .header {
+        //positioning
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            //font
+            font-family: $font;
+            font-weight: 100;
+        }
+
+        button {
+            //color
+            border: 0;
+            background-color: transparent;
+        }
+    }
+
+    .body {
+        //positioning
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        #img-label {
+            //positioning
+            display: flex;
+            margin: 0;
+            //measurements
+            width: 92%;
+            height: 0;
+            padding: 0;
+            border: 0;
+            border-radius: $sidebar-border-radius;
+            cursor: pointer;
+            //timing
+            transition: $sidebar-transition;
+            
+            &.active {
+                //measurements
+                height: $sidebar-campaign-img-height;
+                padding: $sidebar-small-padding;
+                border: $sidebar-dashed-border;
+            }
+            
+            input {
+                //color
+                opacity: 0;
+                //positioning
+                position: absolute;
+                //measurements
+                width: 0.1px;
+                height: 0.1px;
+                overflow: hidden;
+                //z-index
+                z-index: $background-z-index;
+
+            }
+        }
+        
+        input {
+            //color
+            color: $sidebar-light-color;
+            //measurements
+            width: 92%;
+            border-radius: $sidebar-border-radius;
+            border: $sidebar-border;
+            background-color: transparent;
+            padding: $sidebar-small-padding;
+            //font
+            font-size: 1.5em;
+            font-family: $font;
+            font-weight: $font-weight;
+            //timing
+            transition: $sidebar-transition;
+
+            &.active {
+                margin: $sidebar-middle-padding 0 0 0;
+            }
+        }
+
+        textarea {
+            //color
+            background-color: transparent;
+            color: $sidebar-light-color;
+            //positioning
+            margin: 0;
+            //measurements
+            width: 92%;
+            height: 0;
+            border: 0;
+            border-radius: $sidebar-border-radius;
+            padding: 0;
+            //font
+            font-size: $font-size;
+            font-family: $font;
+            font-weight: $font-weight;
+            //timing
+            transition: $sidebar-transition;
+            
+            &.active {
+                //positioning
+                margin: $sidebar-middle-padding 0 0 0;
+                //measurements
+                height: initial;
+                padding: $sidebar-small-padding;
+                border: $sidebar-border;
+            }
+        }
+
+        .options {
+            //positioning
+            display: flex;
+            justify-content: space-between;
+            margin: 0 0 $sidebar-large-padding 0;
+            //measurements
+            width: 100%;
+            //timing
+            transition: $sidebar-transition;
+
+            &.active {
+                button {
+                    //positioning
+                    margin: $sidebar-middle-padding 2% 0 2%;
+                    //measurements
+                    height: initial;
+                    padding: $sidebar-small-padding;
+                    border: $sidebar-border;
+                }
+            }
+
+            button {
+                //color
+                background-color: transparent;
+                color: $sidebar-light-color;
+                //positioning
+                align-self: start;
+                overflow-y: hidden;
+                //measurements
+                height: 0;
+                border: 0;
+                padding: 0;
+                border-radius: $sidebar-border-radius;
+                //font
+                font-family: $font;
+                font-size: $font-size;
+                font-weight: $font-weight;
+            }
+    
+            #campaigns-nav-advanced-options {
+                //positioning
+                align-self: end;
+                //measurements
+                border: 0;
+                //font
+                font-size: $font-small-size;
+            }
+        }
+    }
+}

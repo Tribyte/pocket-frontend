@@ -1,0 +1,85 @@
+@import "../../../../../variables.scss";
+
+
+.campaign-nav-element {
+    position: relative;
+    cursor: pointer;
+    margin-top: $sidebar-middle-padding;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $sidebar-small-padding;
+    border: $sidebar-border;
+    border-radius: $sidebar-border-radius;
+
+    -moz-user-select: none;
+    user-select: none;
+
+    h2 {
+        margin: 0;
+        font-family: $font;
+        font-weight: 100;
+    }
+
+    span {
+        width: 0;
+        display: flex;
+        align-items: center;
+        height: $sidebar-campaign-svg-width;
+        overflow-x: hidden;
+        transition: $sidebar-transition;
+
+        &.active {
+            width: $sidebar-expanded-icon-options;
+            transition: overflow-x initial $sidebar-transition;
+        }
+
+        button {
+            display: contents;
+            cursor: pointer;
+            
+            &:hover svg {
+                transform: rotate(180deg);
+            }
+            
+            svg {
+                transition: $sidebar-transition;
+                width: $sidebar-campaign-svg-width;
+            }
+        }
+    }
+}
+
+#campaign-nav-dropdown {
+    .cards {
+        overflow-y: hidden;
+        transition: $sidebar-transition;
+        height: 0;
+
+        &.active {
+            height: 100%;
+        }
+
+        .new-card-nav-element{
+            transition: $sidebar-transition;
+
+            &.active {
+                color: $sidebar-dark-color;
+                background-color: $sidebar-light-color;
+
+                svg {
+                    stroke: $sidebar-dark-color;
+                    transform: rotate(45deg);
+                }
+            }
+
+            span {
+                width: initial;
+
+                svg {
+                    transition: $sidebar-transition;
+                }
+            }
+        }
+    }
+}

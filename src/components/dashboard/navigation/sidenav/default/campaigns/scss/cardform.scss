@@ -1,0 +1,154 @@
+@import "../../../../../variables.scss";
+
+#card-form {
+    //positioning
+    position: fixed;
+    top: 0;
+    left: $sidebar-expanded-width;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //measurements
+    width: 0;
+    overflow-x: hidden;
+    background-color: $sidebar-dark-color;
+    //timing
+    transition: $sidebar-transition;
+
+    &.active {
+        //measurements
+        width: $sidebar-expanded-width - $sidebar-width;
+    }
+
+    .header {
+        //positioning
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            //font
+            font-family: $font;
+            font-weight: 100;
+        }
+
+        button {
+            //color
+            border: 0;
+            background-color: transparent;
+        }
+    }
+
+    .body {
+        //positioning
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        #img-label {
+            //positioning
+            display: flex;
+            margin: 0;
+            //measurements
+            width: 92%;
+            height: $sidebar-campaign-img-height;
+            padding: $sidebar-small-padding;
+            border: $sidebar-dashed-border;
+            border-radius: $sidebar-border-radius;
+            cursor: pointer;
+            //timing
+            transition: $sidebar-transition;
+
+            input {
+                //color
+                opacity: 0;
+                //positioning
+                position: absolute;
+                //measurements
+                width: 0.1px;
+                height: 0.1px;
+                overflow: hidden;
+                //z-index
+                z-index: $background-z-index;
+
+            }
+        }
+        
+        input {
+            //color
+            color: $sidebar-light-color;
+            //positioning
+            margin: $sidebar-middle-padding 0 0 0;
+            //measurements
+            width: 92%;
+            border-radius: $sidebar-border-radius;
+            border: $sidebar-border;
+            background-color: transparent;
+            padding: $sidebar-small-padding;
+            //font
+            font-size: 1.5em;
+            font-family: $font;
+            font-weight: $font-weight;
+            //timing
+            transition: $sidebar-transition;
+        }
+
+        textarea {
+            //color
+            background-color: transparent;
+            color: $sidebar-light-color;
+            //positioning
+            margin: $sidebar-middle-padding 0 0 0;
+            //measurements
+            width: 92%;
+            height: initial;
+            border: $sidebar-border;
+            border-radius: $sidebar-border-radius;
+            padding: $sidebar-small-padding;
+            //font
+            font-size: $font-size;
+            font-family: $font;
+            font-weight: $font-weight;
+            //timing
+            transition: $sidebar-transition;
+        }
+
+        .options {
+            //positioning
+            display: flex;
+            justify-content: space-between;
+            margin: 0 0 $sidebar-large-padding 0;
+            //measurements
+            width: 100%;
+            //timing
+            transition: $sidebar-transition;
+
+            button {
+                //color
+                background-color: transparent;
+                color: $sidebar-light-color;
+                //positioning
+                margin: $sidebar-middle-padding 2% 0 2%;
+                align-self: start;
+                overflow-y: hidden;
+                //measurements
+                border: $sidebar-border;
+                padding: $sidebar-small-padding;
+                border-radius: $sidebar-border-radius;
+                //font
+                font-family: $font;
+                font-size: $font-size;
+                font-weight: $font-weight;
+            }
+    
+            #campaigns-nav-advanced-options {
+                //positioning
+                align-self: end;
+                //measurements
+                border: 0;
+                //font
+                font-size: $font-small-size;
+            }
+        }
+    }
+}

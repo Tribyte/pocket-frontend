@@ -1,0 +1,48 @@
+@import "../../../../../variables.scss";
+
+.card-nav-element {
+    cursor: pointer;
+    margin-top: $sidebar-middle-padding;
+    margin-left: $sidebar-large-padding;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $sidebar-small-padding;
+    border: $sidebar-border;
+    border-radius: $sidebar-border-radius;
+
+    h2 {
+        margin: 0;
+        font-family: $font;
+        font-weight: 100;
+    }
+
+    span {
+        width: 0;
+        display: flex;
+        align-items: center;
+        height: $sidebar-campaign-svg-width;
+        overflow-x: hidden;
+        transition: $sidebar-transition;
+
+        &.active {
+            width: initial;
+            transition: overflow-x initial $sidebar-transition;
+        }
+
+        button {
+            display: contents;
+            cursor: pointer;
+            
+            &:hover svg {
+                transform: rotate(180deg);
+            }
+            
+            svg {
+                transition: $sidebar-transition;
+                width: $sidebar-campaign-svg-width;
+            }
+        }
+
+    }
+}

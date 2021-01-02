@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7152793e.chunk.css",
+    "main.js": "/static/js/main.a5e414ca.chunk.js",
+    "main.js.map": "/static/js/main.a5e414ca.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c8a21426.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c8a21426.js.map",
+    "static/js/2.9f1cfdbb.chunk.js": "/static/js/2.9f1cfdbb.chunk.js",
+    "static/js/2.9f1cfdbb.chunk.js.map": "/static/js/2.9f1cfdbb.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.f1f65823ffff036fadc7cf3bcaf8e6fa.js": "/precache-manifest.f1f65823ffff036fadc7cf3bcaf8e6fa.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.7152793e.chunk.css.map": "/static/css/main.7152793e.chunk.css.map",
+    "static/js/2.9f1cfdbb.chunk.js.LICENSE.txt": "/static/js/2.9f1cfdbb.chunk.js.LICENSE.txt",
+    "static/media/SVG-Campaigns.fc1c69ca.svg": "/static/media/SVG-Campaigns.fc1c69ca.svg",
+    "static/media/apps-ico.069e0046.svg": "/static/media/apps-ico.069e0046.svg",
+    "static/media/create-icon.122306a4.svg": "/static/media/create-icon.122306a4.svg",
+    "static/media/discord-icon.31a3df00.svg": "/static/media/discord-icon.31a3df00.svg",
+    "static/media/eye-ico.eb883cc5.svg": "/static/media/eye-ico.eb883cc5.svg",
+    "static/media/file-ico.ba76b4cd.svg": "/static/media/file-ico.ba76b4cd.svg",
+    "static/media/lock-ico.f9ee9fde.svg": "/static/media/lock-ico.f9ee9fde.svg",
+    "static/media/logo-ico.fc1c69ca.svg": "/static/media/logo-ico.fc1c69ca.svg",
+    "static/media/logout-ico.cf722837.svg": "/static/media/logout-ico.cf722837.svg",
+    "static/media/organize-icon.bcc8317c.svg": "/static/media/organize-icon.bcc8317c.svg",
+    "static/media/person-ico.0140958f.svg": "/static/media/person-ico.0140958f.svg",
+    "static/media/plus-ico.bdde16c6.svg": "/static/media/plus-ico.bdde16c6.svg",
+    "static/media/search-ico.3cd8358d.svg": "/static/media/search-ico.3cd8358d.svg",
+    "static/media/settings-ico.d9bca98c.svg": "/static/media/settings-ico.d9bca98c.svg",
+    "static/media/sick-play-icon.1ff3803c.svg": "/static/media/sick-play-icon.1ff3803c.svg",
+    "static/media/x-ico.3d2ede13.svg": "/static/media/x-ico.3d2ede13.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c8a21426.js",
+    "static/js/2.9f1cfdbb.chunk.js",
+    "static/css/main.7152793e.chunk.css",
+    "static/js/main.a5e414ca.chunk.js"
+  ]
+}
